@@ -1,5 +1,5 @@
 /* THE JAVASCIRPT IS EMBEDDED IN THE HTML FILE DUE TO COMPATIBILITY ISSUES WITH MY BROWSER*/
-/* const menu = document.getElementById("menu");
+const menu = document.getElementById("menu");
 
 Array.from(document.getElementsByClassName("menu-item"))
   .forEach((item, index) => {
@@ -7,4 +7,3 @@ Array.from(document.getElementsByClassName("menu-item"))
       menu.dataset.activeIndex = index;
     }
   });
-*/
