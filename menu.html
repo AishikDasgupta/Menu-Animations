@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Animations</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <div id="menu">
+        <div id="menu-items">
+          <div class="menu-item">Home</div>
+          <div class="menu-item">Projects</div>
+          <div class="menu-item">About</div>
+          <div class="menu-item">Contact Us</div>
+        </div>
+        <div id="menu-background-pattern"></div>
+        <div id="menu-background-image"></div>
+      </div>
+
+    <Script>
+        const menu = document.getElementById("menu");
+
+        Array.from(document.getElementsByClassName("menu-item"))
+            .forEach((item, index) => {
+                item.onmouseover = () => {
+                menu.dataset.activeIndex = index;
+        }
+        });
+    </Script>
+</body>
+</html>
